@@ -8,15 +8,27 @@
 
 body {
     background-color: #AED6F1;
+    z-index:1;
 }
 
 .resume-contents {
+    max-width: 816px;
+    max-height: 1054px:
     min-height: 100vh;
     width: 80%;
     margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(8, 1fr);
+    z-index:1;
+}
+
+.profile-image {
+    position:absolute;
+    z-index:0;
+    max-height: 250px;
+    opacity: 0.2;
+    object-fit: contain;
 }
 
 .top-section-right{
@@ -33,14 +45,17 @@ body {
     background-color: #F4F6F6;
 }
 
-.right-section {
+.bottom-section {
     grid-column: span 7;
     grid-row: span 7;
     height: 100%;
     background-color: #F4F6F6;
+    padding-bottom: 1rem;
 }
 .top-section-contents{
-    padding: 2rem 2rem;
+    padding: 0rem 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
     display: grid
 }
 
@@ -74,7 +89,7 @@ body {
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 /* .contact-info { border-bottom: 2px solid #1B2631; } */
@@ -106,8 +121,25 @@ body {
     margin-left: 0.75rem;
 }
 
+ul {
+  margin: 0;
+}
+ul.dashed {
+  list-style-type: none;
+}
+
+ul.dashed > li:before {
+  content: " - ";
+  text-indent: -5px;
+}
+
+.experience ul {
+    padding-top: 0.1rem;
+    font-size: 12px;
+}
+
 .skills ul {
-    padding-top: 1.5rem;
+    padding-top: 0.1rem;
 }
 .skills ul li p {
     padding: .4rem 0;
@@ -119,89 +151,157 @@ body {
     text-transform: uppercase;
 }
 
+.projects ul {
+    padding-top: 0.1rem;
+    font-size: 11px;
+}
+
+.education ul {
+    padding-top: 0.1rem;
+    font-size: 14px;
+}
 
 .right-section-contents {
+    padding: 1rem 2rem;
+}
+.left-section-contents {
     padding: 1rem 2rem;
 }
 
 .right-title {
     color: #34495E;
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
     display: flex;
     align-items: center;
     position: relative;
-    padding-bottom: 0 rem;
+    padding-top: 1rem;
     border-bottom: 2px solid #1B2631;
 }
 
 .gap {
-    padding-bottom: 1rem;
+    padding-bottom: 0.4rem;
 }
 
-
-.experience-contents,
-.education-contents,
-.awards-contents {
+.bottom-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 1rem;
-    padding-top: .5rem;
+    padding-top: .1rem;
 }
 
-.details {
+.date-loc-details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 0.5rem;
-    padding-top: .5rem;
 }
 
 .exp-company-name,
 .education-school-name,
 .awards-company-name {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #21638f;
-    padding-bottom: .1rem;
+    padding-top: 0.3rem;
+    border-bottom: 1px solid #1B2631;
+    display: inline-block;
+    width: auto;
+    padding-top: 0.6rem;
+}
+.education-degree {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: back;
+    padding-top: 0.25rem;
 }
 
 .time-period {
-    font-size: 16px;
+    font-size: 12px;
+    font-style: italic;
     letter-spacing: 1px;
     line-height: 2rem;
 }
 
-.location,
 .location,
 .awards-location {
-    font-size: 16px;
+    font-size: 12px;
+    font-style: italic;
     letter-spacing: 1px;
     line-height: 2rem;
+    text-align: right;
 }
 
-.exp-position,
-.education-subject,
-.awards-name {
-    font-size: 22px;
+.exp-position {
+    font-size: 18px;
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 1px;
     color: #2E86C1;
-    padding-bottom: .4rem;
+    padding-top: 0.5rem;
+}
+
+.education-subject {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-top: 0.25rem;
+}
+
+.awards-name,
+.projects-name,
+.skills-name {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #black;
+    padding-top: 0.6rem;
 }
 
 .exp-desc,
-.education-desc,
-.awards-desc {
-    font-size: 16px;
-    letter-spacing: 1px;
+.education-desc {
+    font-size: 12px;
+    letter-spacing: 0.5px;
     line-height: 1.5rem;
     border-left: 3px solid #a5a3a3;
     padding-left: 5px;
+}
+.awards-desc {
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+.skills-desc {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.projects-desc {
+    font-size: 11px;
+    letter-spacing: 0.3px;
+}
+
+.box {
+  font-size: 16px;
+  color: white;
+  float: left;
+  border-radius: 10%;
+  padding: 0.3rem;
+  background-color: #3c78d8;
+  margin: 0.25rem;
+}
+.square {
+    padding-top: 0.25rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.square::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Media queries */
@@ -218,7 +318,7 @@ body {
         grid-column: span 3;
     }
 
-    .right-section {
+    .bottom-section {
         grid-column: span 4;
     }
 
@@ -285,7 +385,10 @@ body {
     }
 
     .exp-position,
-    .education-subject,
-    .awards-name {
+    .education-subject {
         font-size: 18px;
+    }
+
+    awards-name {
+        font-size: 14px;
     }
