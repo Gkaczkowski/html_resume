@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #AED6F1;
+    background-color: #F4F6F6;
     z-index:1;
 }
 
@@ -15,10 +15,10 @@ body {
     max-width: 816px;
     max-height: 1054px:
     min-height: 100vh;
-    width: 80%;
-    margin: 2rem auto;
+    width: 100%;
+    margin: 0.05rem auto;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
     z-index:1;
 }
@@ -32,36 +32,42 @@ body {
 }
 
 .top-section-right{
-    grid-column: span 2;
+    grid-column: span 3;
     grid-row: span 1;
     height: 100%;
-    background-color: #F4F6F6;
+    background-color: #FEFEFE;
 }
 
 .top-section-left {
     grid-column: span 5;
     grid-row: span 1;
     height: 100%;
-    background-color: #F4F6F6;
+    background-color: #FEFEFE;
 }
 
 .bottom-section {
-    grid-column: span 7;
+    grid-column: span 8;
     grid-row: span 7;
     height: 100%;
-    background-color: #F4F6F6;
-    padding-bottom: 1rem;
+    background-color: #FEFEFE;
+
 }
 .top-section-contents{
-    padding: 0rem 2rem;
-    padding-top: 2rem;
-    padding-bottom: 0.5rem;
+    padding: 0rem 1.75rem;
+    padding-top: 1.5rem;
     display: grid
+}
+
+.right-section-contents {
+    padding: 0rem 1.75rem;
+}
+.left-section-contents {
+    padding: 0rem 1.75rem;
 }
 
 .profile {
     width: 100%;
-    border-bottom: 2px solid #1B2631;
+
 }
 
 .name {
@@ -87,35 +93,20 @@ body {
 
 .about-me-contents {
     font-size: 12px;
-    letter-spacing: 1px;
-    line-height: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
-/* .contact-info { border-bottom: 2px solid #1B2631; } */
-.left-title {
-    color: #0066CC;
-    font-size: 20px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.contact-info ul li {
+    font-size: 12px;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-
-.contact-info ul li,
-.references ul li {
-    padding: 0.4rem 0;
+    padding: 0.2rem 0;
     align-items: right;
     text-align: right;
     justify-content: space-between;
-    color: #0066CC;
     letter-spacing: 0.5px;
-    font-size: 12px;
 }
 
-.contact-info ul li i,
-.references ul li i {
+.contact-info ul li i {
     font-size: 12px;
     color: #2E86C1;
     margin-left: 0.75rem;
@@ -158,19 +149,14 @@ ul.dashed > li:before {
 
 .education ul {
     padding-top: 0.1rem;
-    font-size: 14px;
+    font-size: 12px;
 }
 
-.right-section-contents {
-    padding: 1rem 2rem;
-}
-.left-section-contents {
-    padding: 1rem 2rem;
-}
+
 
 .right-title {
     color: #34495E;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: bold;
@@ -179,10 +165,11 @@ ul.dashed > li:before {
     position: relative;
     padding-top: 1rem;
     border-bottom: 2px solid #1B2631;
+
 }
 
 .gap {
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.05rem;
 }
 
 .bottom-section {
@@ -199,12 +186,8 @@ ul.dashed > li:before {
 .exp-company-name,
 .education-school-name,
 .awards-company-name {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #21638f;
-    padding-top: 0.3rem;
     border-bottom: 1px solid #1B2631;
     display: inline-block;
     width: auto;
@@ -214,28 +197,25 @@ ul.dashed > li:before {
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
-    color: back;
     padding-top: 0.25rem;
 }
 
 .time-period {
     font-size: 12px;
     font-style: italic;
-    letter-spacing: 1px;
-    line-height: 2rem;
+    line-height:1rem;
+    color: #818589;
 }
 
-.location,
-.awards-location {
+.location {
     font-size: 12px;
     font-style: italic;
-    letter-spacing: 1px;
-    line-height: 2rem;
+    color: #818589;
     text-align: right;
 }
 
 .exp-position {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
     color: #2E86C1;
@@ -250,14 +230,21 @@ ul.dashed > li:before {
     padding-top: 0.25rem;
 }
 
-.awards-name,
 .projects-name,
 .skills-name {
     font-size: 14px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 0.25px;
     color: #black;
-    padding-top: 0.6rem;
+    padding-top: 0.4rem;
+}
+
+.awards-name {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+    color: #black;
+    padding-top: 0.3rem;
 }
 
 .exp-desc,
@@ -265,23 +252,19 @@ ul.dashed > li:before {
     font-size: 12px;
     letter-spacing: 0.5px;
     line-height: 1.5rem;
-    border-left: 3px solid #a5a3a3;
     padding-left: 5px;
 }
 .awards-desc {
-    font-size: 12px;
+    font-size: 11px;
     font-style: italic;
-    letter-spacing: 0.5px;
 }
 
 .skills-desc {
     font-size: 12px;
-    letter-spacing: 0.5px;
 }
 
 .projects-desc {
     font-size: 11px;
-    letter-spacing: 0.3px;
 }
 
 .box {
