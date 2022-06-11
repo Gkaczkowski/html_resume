@@ -98,7 +98,6 @@ body {
 
 .contact-info ul li {
     font-size: 12px;
-    font-weight: bold;
     padding: 0.2rem 0;
     align-items: right;
     text-align: right;
@@ -265,6 +264,10 @@ ul.dashed > li:before {
 
 .projects-desc {
     font-size: 11px;
+}
+
+a {
+    color: #2E86C1;
 }
 
 .box {
