@@ -66,12 +66,12 @@ body {
 }
 
 .right-section-contents {
-    padding-left: 1.25rem;
+    padding-left: 1.2rem;
     padding-right: 1.75rem;
 }
 .left-section-contents {
     padding-left: 1.75rem;
-    padding-right: 1.25rem;
+    padding-right: 1.2rem;
 }
 
 .profile {
@@ -193,8 +193,6 @@ ul.dashed > li:before {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.exp-company-name,
-.education-school-name,
 .education-degree {
     font-size: 16px;
     font-weight: bold;
@@ -257,7 +255,7 @@ ul.dashed > li:before {
     padding-left: 5px;
 }
 .awards-desc {
-    font-size: 11px;
+    font-size: 12px;
     font-style: italic;
 }
 
@@ -271,7 +269,7 @@ ul.dashed > li:before {
 }
 
 .projects-desc {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 a {
@@ -279,8 +277,7 @@ a {
 }
 
 .exp-company-name,
-.education-school-name,
-.awards-company-name {
+.education-school-name {
     font-size: 18px;
     font-weight: bold;
     border-bottom: 1px solid #1B2631;
