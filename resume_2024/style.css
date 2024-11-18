@@ -18,7 +18,7 @@ body {
     width: 100%;
     margin: 0.05rem auto;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr);
     z-index:1;
 }
@@ -32,26 +32,33 @@ body {
 }
 
 .top-section-right{
-    grid-column: span 3;
+    grid-column: span 4;
     grid-row: span 1;
     height: 100%;
     background-color: #FEFEFE;
 }
 
 .top-section-left {
-    grid-column: span 5;
+    grid-column: span 6;
     grid-row: span 1;
     height: 100%;
     background-color: #FEFEFE;
 }
 
-.bottom-section {
-    grid-column: span 8;
+.right-section {
+    grid-column: span 4;
     grid-row: span 7;
     height: 100%;
     background-color: #FEFEFE;
-
 }
+
+.left-section {
+    grid-column: span 6;
+    grid-row: span 7;
+    height: 100%;
+    background-color: #FEFEFE;
+}
+
 .top-section-contents{
     padding: 0rem 1.75rem;
     padding-top: 1.5rem;
@@ -59,10 +66,12 @@ body {
 }
 
 .right-section-contents {
-    padding: 0rem 1.75rem;
+    padding-left: 1.2rem;
+    padding-right: 1.75rem;
 }
 .left-section-contents {
-    padding: 0rem 1.75rem;
+    padding-left: 1.75rem;
+    padding-right: 1.2rem;
 }
 
 .profile {
@@ -151,18 +160,16 @@ ul.dashed > li:before {
     font-size: 12px;
 }
 
-
-
 .right-title {
     color: #34495E;
     font-size: 22px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: bold;
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 1rem;
+    padding-top: 0.75rem;
     border-bottom: 2px solid #1B2631;
 
 }
@@ -171,9 +178,13 @@ ul.dashed > li:before {
     padding-bottom: 0.05rem;
 }
 
-.bottom-section {
+.right-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    padding-top: .1rem;
+}
+
+.left-section {
+    display: grid;
     padding-top: .1rem;
 }
 
@@ -182,16 +193,6 @@ ul.dashed > li:before {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.exp-company-name,
-.education-school-name,
-.awards-company-name {
-    font-size: 18px;
-    font-weight: bold;
-    border-bottom: 1px solid #1B2631;
-    display: inline-block;
-    width: auto;
-    padding-top: 0.6rem;
-}
 .education-degree {
     font-size: 16px;
     font-weight: bold;
@@ -239,7 +240,7 @@ ul.dashed > li:before {
 }
 
 .awards-name {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     letter-spacing: 0.25px;
     color: #black;
@@ -254,7 +255,7 @@ ul.dashed > li:before {
     padding-left: 5px;
 }
 .awards-desc {
-    font-size: 11px;
+    font-size: 12px;
     font-style: italic;
 }
 
@@ -262,12 +263,27 @@ ul.dashed > li:before {
     font-size: 12px;
 }
 
+.software-skills {
+    font-size: 12px;
+    padding-top: 0.4rem;
+}
+
 .projects-desc {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 a {
     color: #2E86C1;
+}
+
+.exp-company-name,
+.education-school-name {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #1B2631;
+    display: inline-block;
+    width: auto;
+    padding-top: 0.6rem;
 }
 
 .box {
@@ -304,8 +320,8 @@ a {
         grid-column: span 3;
     }
 
-    .bottom-section {
-        grid-column: span 4;
+    .right-section {
+        grid-column: span 2;
     }
 
 }
@@ -360,21 +376,13 @@ a {
 
     .exp-company-name,
     .education-school-name,
-    .awards-company-name {
-        font-size: 18px;
-    }
 
     .exp-time-period,
     .time-period,
-    .awards-time-period {
-        font-size: 16px;
-    }
 
     .exp-position,
     .education-subject {
         font-size: 18px;
     }
 
-    awards-name {
-        font-size: 14px;
-    }
+}
