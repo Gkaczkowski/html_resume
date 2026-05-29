@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gareth Kaczkowski - Resume</title>
+
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============================== PAGE 1 ============================== -->
+    <main class="resume-page">
+        <img class="profile-image" src="../img/wave.png" alt="Wave Image">
+
+        <header class="page-header">
+            <div class="header-left">
+                <p class="name">Gareth Kaczkowski</p>
+                <p class="profession">Software Engineering Lead &amp; Investor</p>
+            </div>
+            <div class="header-right">
+                <ul class="contact-info">
+                    <li>gareth.kaczkowski@gmail.com<a href="mailto:gareth.kaczkowski@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                    <li>415-318-9390<i class="fa fa-phone"></i></li>
+                    <li>New York City<i class="fa fa-map-marker"></i></li>
+                    <li><a href="https://www.linkedin.com/in/garethkaczkowski/">LinkedIn<i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <p class="about-me-contents">
+            Engineering leader and software engineer building the next generation of warehouse robotics. Co-author of published research in robot kinematics; previously at Tesla in EV powertrain and as a founding member of the TeslaBot humanoid robot project. Active early-stage investor focused on robotics, industrial automation, and the reindustrialization of American manufacturing.
+        </p>
+
+        <section class="page-section">
+            <div class="section-title">Experience</div>
+
+            <div class="exp-block">
+                <p class="exp-company-name">Mytra</p>
+                <p class="exp-position">Senior Staff Software Engineer</p>
+                <div class="date-loc-details">
+                    <p class="time-period">05/2025 - Present</p>
+                    <p class="location">South San Francisco, USA</p>
+                </div>
+                <ul class="dashed exp-desc">
+                    <li>Transitioned into engineering leadership, managing a team of 8 across front-end/UI development, data engineering, software tooling, and simulation; responsible for every human-facing surface of the Mytra software stack</li>
+                    <li>Rearchitected external UIs and expanded E2E and CI/CD test coverage, reducing human interventions during deployments by 95% and improving system recovery and response time</li>
+                    <li>Architected an internal agentic chat service in Python, built in collaboration with Claude Code, featuring swappable model configuration and providing debugging, operational insight, and customer support across local, cloud, and air-gapped deployments</li>
+                </ul>
+                <p class="exp-position">Staff Software Engineer</p>
+                <div class="date-loc-details">
+                    <p class="time-period">12/2023 - 05/2025</p>
+                    <p class="location">&nbsp;</p>
+                </div>
+                <ul class="dashed exp-desc">
+                    <li>Rearchitected the Mytra robotics software stack, extracting compute-critical components into C++ while preserving Python interfaces; split the robotics service into two core processes connected via Protocol Buffers for consistent, versioned message contracts</li>
+                    <li>Built internal software-in-the-loop (SIL) testing suite, simulation systems, and developer-productivity tooling enabling end-to-end CI/CD validation of the robotic software stack</li>
+                    <li>Managed deployment of robotic system to Fortune 200 customer, outperforming throughput targets by 200% with 99.9% system uptime</li>
+                </ul>
+                <p class="exp-position">Senior Software Engineer</p>
+                <div class="date-loc-details">
+                    <p class="time-period">03/2023 - 12/2023</p>
+                    <p class="location">&nbsp;</p>
+                </div>
+                <ul class="dashed exp-desc">
+                    <li>Joined as the founding robotics software engineer; built the team to 10 and established the engineering culture, hiring bar, and architectural foundation of Mytra's robotic platform</li>
+                    <li>Designed software and kinematics control algorithms enabling autonomous motion of a 3D warehouse robot capable of moving 3,000 lbs of payload; co-authored the resulting research, "Design and Control of a Climbing Robot for Warehouse Automation," published in Springer's Advances in Robot Kinematics</li>
+                    <li>Delivered entire robot controls stack (Python, C++, Rust) within 6 months and deployed to Fortune 500 customer, resulting in 99% uptime over 180 days of 24/7 deployment</li>
+                </ul>
+            </div>
+
+            <div class="exp-block">
+                <p class="exp-company-name">Eclipse</p>
+                <p class="exp-position">Venture Capital Investor</p>
+                <div class="date-loc-details">
+                    <p class="time-period">06/2025 - Present</p>
+                    <p class="location">New York, USA</p>
+                </div>
+                <ul class="dashed exp-desc">
+                    <li>Source venture capital investments with a focus on robotics, industrial automation, and advanced manufacturing</li>
+                    <li>Provide strategic advice to investors and develop investment theses relating to physical AI, robotics, and reindustrialization of American manufacturing</li>
+                </ul>
+            </div>
+
+            <div class="exp-block">
+                <p class="exp-company-name">Tesla, Inc.</p>
+                <p class="exp-position">Sr. Software Development Engineer</p>
+                <div class="date-loc-details">
+                    <p class="time-period">05/2022 - 03/2023</p>
+                    <p class="location">Palo Alto, USA</p>
+                </div>
+                <ul class="dashed exp-desc">
+                    <li>Built software platform from the ground up to automate HV battery testing at Tesla using Python, REST APIs and Kafka data pipelines, scaled worldwide to 30 engineers in NA/EU/China to improve reliability and consistency of battery testing</li>
+                    <li>Built a software team internal to hardware test organization, including sourcing and onboarding new hires, developing roles and responsibilities, and setting team vision and objectives</li>
+                    <li>Built data-analytics tools (Pandas, Plotly, Dash, NumPy) over large-volume time-series test data to drive high-cost engineering decisions</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================== PAGE 2 ============================== -->
+    <main class="resume-page">
+        <img class="profile-image" src="../img/wave.png" alt="Wave Image">
+
+        <header class="page-header page-header-compact">
+            <div class="header-left">
+                <p class="name">Gareth Kaczkowski</p>
+                <p class="profession">Software Engineering Lead &amp; Investor (continued)</p>
+            </div>
+            <div class="header-right">
+                <ul class="contact-info">
+                    <li>gareth.kaczkowski@gmail.com<a href="mailto:gareth.kaczkowski@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/garethkaczkowski/">LinkedIn<i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="page-section">
+            <div class="section-title">Experience (cont.)</div>
+
+            <div class="exp-block">
+                <p class="exp-position">Software Development Engineer</p>
+                <div class="date-loc-details">
+                    <p class="time-period">06/2021 - 05/2022</p>
+                    <p class="location">Palo Alto, USA</p>
+                </div>
+                <ul class="dashed exp-desc">
+                    <li>Automated battery pack electrical testing and validation in Python, enabling continuous charge/discharge cycling with cell-level health monitoring to determine quality and reliability of new battery cell technologies</li>
+                    <li>Maintained and developed a software suite used by 250+ test engineers (Python, MySQL, MongoDB, React, REST APIs) for test automation and post-processing of large hardware datasets</li>
+                    <li>Designed, procured, and built test equipment and controls software to automate thermally accelerated ageing of 3-phase AC electromagnetic stators, incorporating PID control, watchdog safety threads, temperature monitoring, and power optimization</li>
+                </ul>
+
+                <p class="exp-position">Drive Systems Test Engineer</p>
+                <div class="date-loc-details">
+                    <p class="time-period">06/2020 - 06/2021</p>
+                    <p class="location">Palo Alto, USA</p>
+                </div>
+                <ul class="dashed exp-desc">
+                    <li>Founding member of the TeslaBot humanoid robot project; architected the actuator requirements framework, translating human kinematics into engineering specifications that informed production joint design</li>
+                    <li>Contributed to the engineering team that built the first internal walking prototype of TeslaBot, prior to the project's public reveal</li>
+                    <li>Simulated electrical conditions of permanent magnet and induction motors to analytically model and predict electrically induced bearing damage (EIBD) using LTspice, ANSYS, Matlab and Python, resulting in motor geometry changes and efficiency improvements to the Tesla Semi-Truck</li>
+                    <li>Researched, optimized, and tested electromagnetic common-mode chokes to present conclusive evidence resulting in an $8MM/year manufacturing cost-down</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="page-section">
+            <div class="section-title">Education</div>
+            <div class="exp-block">
+                <p class="exp-company-name">The University of British Columbia</p>
+                <p class="exp-position">BASc - Integrated Engineering</p>
+                <div class="date-loc-details">
+                    <p class="time-period">09/2014 - 05/2020</p>
+                    <p class="location">Vancouver, Canada</p>
+                </div>
+                <ul class="dashed exp-desc">
+                    <li>Major: Electrical &amp; Mechanical Engineering</li>
+                    <li>Minor: Entrepreneurship</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="two-col">
+            <div class="two-col-cell">
+                <section class="page-section">
+                    <div class="section-title">Software Skills</div>
+                    <p class="software-skills">
+                        Python, Git, Pandas, NumPy, SQL, C, C++, Kafka, REST APIs, React, JavaScript, MongoDB, MySQL, Plotly/Dash, Spark, Presto, ROS, Matlab, SolidWorks, ANSYS, LTspice, CAN, TCP/IP, I2C
+                    </p>
+                </section>
+
+                <section class="page-section">
+                    <div class="section-title">Accomplishments</div>
+                    <div class="exp-block">
+                        <p class="awards-name">Fundraised over $10,000 for ALS Research</p>
+                        <p class="awards-desc">Donated to the ALS Society of British Columbia &amp; Yukon</p>
+
+                        <p class="awards-name">APEX Entrepreneurial Powerhouse (2019)</p>
+                        <p class="awards-desc">Awarded at the APEX international business competition for StoneOyster Biotechnologies, a start-up upcycling oyster shells into sustainable stone countertops.</p>
+
+                        <p class="awards-name">Industry Design Award (2017)</p>
+                        <p class="awards-desc">Presented through UBC Engineering for design of an automated hydroponics system for growth of micro-greens in a consumer's home or work environment</p>
+
+                        <p class="awards-name">Captain of the UBC Wrestling Team (2015-2017)</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="two-col-cell">
+                <section class="page-section">
+                    <div class="section-title">Technical Projects</div>
+                    <div class="exp-block">
+                        <p class="projects-name"><a href="https://github.com/Gkaczkowski/html_resume">This Resume (2022)</a></p>
+                        <ul class="dashed exp-desc">
+                            <li>Written in HTML &amp; CSS</li>
+                        </ul>
+
+                        <p class="projects-name">Rover-TO Autonomous Rover (2018)</p>
+                        <ul class="dashed exp-desc">
+                            <li>Created an autonomous rover capable of detecting leaks on industrial roof membranes by utilizing voltage differential readings</li>
+                            <li>Used Python to develop a BUG2 path guidance and collision avoidance algorithm</li>
+                            <li>Utilized Matlab's robotic system toolbox to run ROS on a Raspberry Pi for data processing, analysis and presentation of a real-time, location accurate electric field vector map at a frequency of 0.5 Hz</li>
+                        </ul>
+
+                        <p class="projects-name">Oculus Controlled Robotic Head (2017)</p>
+                        <ul class="dashed exp-desc">
+                            <li>Incorporated visual feedback from an Intel RealSense camera, and user movement from an Oculus VR headset into the pan/tilt rotation of a robotic head</li>
+                            <li>Designed using SolidWorks software, then fabricated using rapid prototyping including laser &amp; water-jet cutting, and 3D printing</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
